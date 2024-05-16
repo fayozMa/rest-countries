@@ -1,0 +1,71 @@
+.container {
+  max-width: 1280px;
+}
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  transition: all ease 500ms;
+}
+.top {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.content {
+  gap: 75px;
+}
+form {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  background-color: transparent;
+}
+input {
+  width: 480px;
+  height: 56px;
+  background-color: transparent;
+}
+li{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+}
+li img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+select {
+  box-shadow: 0px 2px 9px 0px #0000000e;
+}
+span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  margin-left: 24px;
+  letter-spacing: 0.1em;
+}
+li p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+li:last-child(){
+    margin-bottom: 38px;
+}
+li h3{
+font-size: 18px;
+font-weight: 800;
+line-height: 26px;
+text-align: left;
+margin-top: 24px;
+margin-bottom: 16px;
+margin-left: 24px;
+}
+body.dark-mode {
+    background-color:#202C36;;
+    color: #ffffff;
+    .top , form , #filter{
+        background: #2B3844;
+    }
+}
