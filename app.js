@@ -31,6 +31,7 @@ function updateUI(countries) {
     p1.innerHTML = `<span>Population:</span>${country.population}`;
     p2.innerHTML = `<span>Region:</span>${country.region}`;
     p3.innerHTML = `<span>Capital:</span>${country.capital}`;
+    p3.setAttribute('class','lastP')
     li.append(img, h3, p1, p2, p3);
     ul.appendChild(li);
   });

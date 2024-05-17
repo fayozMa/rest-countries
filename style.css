@@ -29,6 +29,8 @@ li{
     border-radius: 6px;
 }
 li img{
+    height: 200px;
+    width: 350px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -50,8 +52,8 @@ li p{
   text-align: left;
   margin-bottom: 8px;
 }
-li:last-child(){
-    margin-bottom: 38px;
+.lastP{
+  margin-bottom: 38px;
 }
 li h3{
 font-size: 18px;
