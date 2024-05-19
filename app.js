@@ -5,19 +5,18 @@ fetch("https://restcountries.com/v3.1/all")
   .then((countries) => {
     updateUI(countries);
   });
-const themeBtn = document.querySelector("label")
+const html = document.documentElement
+const themeToggle = document.getElementById("themeToggle")
+const themeChanger = document.getElementById('themeChanger')
+if(localStorage.getItem('theme')){
+  html.setAttribute('data-theme',localStorage.getItem('theme'))
+}
+themeToggle.addEventListener('input', () => {
+  themeChanger.textContent = localStorage.getItem('theme') == 'dracula' ? 'Dark Mode' : 'Light Mode'
+  html.setAttribute('data-theme',html.dataset.theme == 'winter' ? 'dracula' : 'winter')
+  localStorage.setItem('theme',html.dataset.theme)
+})
 const ul = document.querySelector("ul");
-const checkbox = document.querySelector('.theme-controller');
-
-checkbox.addEventListener('change', function() {
-  if (this.checked) {
-    document.body.classList.add('dark-mode');
-    document.getElementById('themeChanger').textContent = 'Light Mode';
-  } else {
-    document.body.classList.remove('dark-mode');
-    document.getElementById('themeChanger').textContent = 'Dark Mode';
-  }
-});
 function updateUI(countries) {
   countries.forEach((country) => {
     const img = document.createElement("img");

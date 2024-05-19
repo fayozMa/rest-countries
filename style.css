@@ -64,10 +64,3 @@ margin-top: 24px;
 margin-bottom: 16px;
 margin-left: 24px;
 }
-body.dark-mode {
-    background-color:#202C36;;
-    color: #ffffff;
-    .top , form , #filter{
-        background: #2B3844;
-    }
-}
